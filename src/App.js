@@ -1,13 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
 import React, { Component } from 'react';
 import Ball from './Ball';
+import Lottery from './Lottery';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Ball num={17}/>
+        <Lottery />
+        <Lottery title="Mini Daily" maxNum={10} maxBalls={4} />
       </div>
     );
 
